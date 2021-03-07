@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantIT.API", "PlantIT.API.csproj", "{3C3AFD4D-96B2-422C-927E-D115270B8C72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C3AFD4D-96B2-422C-927E-D115270B8C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3AFD4D-96B2-422C-927E-D115270B8C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3AFD4D-96B2-422C-927E-D115270B8C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3AFD4D-96B2-422C-927E-D115270B8C72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

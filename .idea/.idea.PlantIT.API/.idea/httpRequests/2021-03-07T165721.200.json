@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2021-03-08T16:57:21.611648+02:00",
+    "temperatureC": 37,
+    "temperatureF": 98,
+    "summary": "Warm"
+  },
+  {
+    "date": "2021-03-09T16:57:21.611659+02:00",
+    "temperatureC": 9,
+    "temperatureF": 48,
+    "summary": "Scorching"
+  },
+  {
+    "date": "2021-03-10T16:57:21.61166+02:00",
+    "temperatureC": 3,
+    "temperatureF": 37,
+    "summary": "Hot"
+  },
+  {
+    "date": "2021-03-11T16:57:21.611661+02:00",
+    "temperatureC": 27,
+    "temperatureF": 80,
+    "summary": "Mild"
+  },
+  {
+    "date": "2021-03-12T16:57:21.611661+02:00",
+    "temperatureC": 27,
+    "temperatureF": 80,
+    "summary": "Warm"
+  }
+]

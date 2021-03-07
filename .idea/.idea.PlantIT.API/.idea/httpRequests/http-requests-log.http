@@ -1,0 +1,118 @@
+GET http://localhost:5000/users
+Accept: application/json
+Authorization: Basic QWRtaW5pc3RyYXRvcjpQcm9BZG1pbjc3Nw==
+
+<> 2021-03-07T172141.200.json
+
+###
+
+GET http://localhost:5000/users
+Accept: application/json
+Authorization: Basic Administrator:ProAdmin777
+
+###
+
+POST https://localhost:5001/users/authenticate
+Content-Type: application/json
+
+{
+  "username": "Administrator",
+  "password": "ProAdmin777"
+}
+
+<> 2021-03-07T171702.200.json
+
+###
+
+GET http://localhost:5000/users
+Accept: application/json
+Authorization: 
+{: 
+  "username": "Administrator",
+  "password": "ProAdmin777"
+}: 
+
+###
+
+GET http://localhost:5000/users
+Accept: application/json
+Authorization: Basic
+{: 
+  "username": "Administrator",
+  "password": "ProAdmin777"
+}: 
+
+###
+
+GET http://localhost:5000/users
+Accept: application/json
+Authorization: Basic
+Content-Type: application/json
+{: 
+  "username": "Administrator",
+  "password": "ProAdmin777"
+}: 
+
+###
+
+GET http://localhost:5000/users
+Accept: application/json
+Authorization: Basic
+
+###
+
+GET https://localhost:5001/weatherforecast
+Accept: application/json
+
+<> 2021-03-07T165721.200.json
+
+###
+
+GET http://localhost:5000/Users
+Accept: application/json
+
+###
+
+POST https://localhost:5001/users/authenticate
+Content-Type: application/json
+
+{
+  "username": "Administrator",
+  "password": "ProAdmin777"
+}
+
+<> 2021-03-07T165542.200.json
+
+###
+
+POST https://localhost:5001/users/authenticate
+Content-Type: application/json
+
+{
+  "username": "Administrator",
+  "password": "test"
+}
+
+<> 2021-03-07T165459.400.json
+
+###
+
+GET https://localhost:5001/WeatherForecast
+Accept: application/json
+
+<> 2021-03-07T165336.200.json
+
+###
+
+GET http://localhost:5000/Users
+Accept: application/json
+
+###
+
+GET http://localhost:5000/WeatherForecast
+Accept: application/json
+
+<> 2021-03-07T165220.200.json
+
+###
+
