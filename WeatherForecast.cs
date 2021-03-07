@@ -2,6 +2,7 @@ using System;
 
 namespace PlantIT.API
 {
+    
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
