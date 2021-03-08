@@ -8,14 +8,14 @@ namespace PlantIT.API.Services
 {
     public abstract class BaseRepository
     {
-         private readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
         private readonly string _ConnectionString;
+
         protected BaseRepository(IConfiguration configuration)
         {
             _configuration = configuration;
             _ConnectionString = _configuration.GetConnectionString("DefaultConnection");
         }
-
 
         // use for buffered queries that return a type
         protected async Task<T> WithConnection<T>(Func<IDbConnection, Task<T>> getData)
@@ -28,11 +28,14 @@ namespace PlantIT.API.Services
             }
             catch (TimeoutException ex)
             {
-                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL timeout", GetType().FullName), ex);
+                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL timeout", GetType().FullName),
+                    ex);
             }
             catch (SqlException ex)
             {
-                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL exception (not a timeout)", GetType().FullName), ex);
+                throw new Exception(
+                    String.Format("{0}.WithConnection() experienced a SQL exception (not a timeout)",
+                        GetType().FullName), ex);
             }
         }
 
@@ -47,16 +50,20 @@ namespace PlantIT.API.Services
             }
             catch (TimeoutException ex)
             {
-                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL timeout", GetType().FullName), ex);
+                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL timeout", GetType().FullName),
+                    ex);
             }
             catch (SqlException ex)
             {
-                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL exception (not a timeout)", GetType().FullName), ex);
+                throw new Exception(
+                    String.Format("{0}.WithConnection() experienced a SQL exception (not a timeout)",
+                        GetType().FullName), ex);
             }
         }
 
         // use for non-buffered queries that return a type
-        protected async Task<TResult> WithConnection<TRead, TResult>(Func<IDbConnection, Task<TRead>> getData, Func<TRead, Task<TResult>> process)
+        protected async Task<TResult> WithConnection<TRead, TResult>(Func<IDbConnection, Task<TRead>> getData,
+            Func<TRead, Task<TResult>> process)
         {
             try
             {
@@ -67,11 +74,14 @@ namespace PlantIT.API.Services
             }
             catch (TimeoutException ex)
             {
-                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL timeout", GetType().FullName), ex);
+                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL timeout", GetType().FullName),
+                    ex);
             }
             catch (SqlException ex)
             {
-                throw new Exception(String.Format("{0}.WithConnection() experienced a SQL exception (not a timeout)", GetType().FullName), ex);
+                throw new Exception(
+                    String.Format("{0}.WithConnection() experienced a SQL exception (not a timeout)",
+                        GetType().FullName), ex);
             }
         }
     }
